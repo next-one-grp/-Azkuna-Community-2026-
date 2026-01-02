@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>༆Azkuna Community༆ #2026🎇 | Membres</title>
+  <meta name="description" content="Découvrez les membres du serveur Discord '༆Azkuna Community༆ #2026🎇' et le nombre total de participants actifs.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    :root{
+      --primary:#6C63FF; --secondary:#FF6584; --accent:#00FFC6;
+      --bg:#1E1E2F; --card:#2A2A3E; --text:#EAEAEA; --highlight:#FFD166; --hover:#FF4D70;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',Arial,sans-serif}
+    body{background:var(--bg);color:var(--text);line-height:1.8}
+    nav{position:fixed;top:0;left:0;right:0;background:rgba(30,30,47,.95);display:flex;justify-content:center;gap:24px;padding:16px;z-index:1000;flex-wrap:wrap}
+    nav a{color:#fff;text-decoration:none;font-size:.9rem;transition:.3s}
+    nav a:hover{color:var(--primary)}
+    header{min-height:60vh;display:flex;align-items:center;justify-content:center;padding:140px 20px 80px;text-align:center;background:linear-gradient(135deg,var(--bg),#252540)}
+    header h1{font-size:3.2rem;margin-bottom:25px;color:var(--primary)}
+    header p{max-width:900px;margin:auto;font-size:1.2rem;opacity:.9}
+    .btn{display:inline-block;margin-top:40px;padding:16px 38px;border-radius:12px;background:var(--secondary);color:#fff;font-weight:600;text-decoration:none;transition:.3s}
+    .btn:hover{background:var(--hover)}
+    section{max-width:1200px;margin:auto;padding:100px 20px;text-align:center}
+    section h2{text-align:center;font-size:2.4rem;margin-bottom:60px;color:var(--accent)}
+    .stats{display:flex;justify-content:center;gap:50px;flex-wrap:wrap;margin-top:40px}
+    .stat{text-align:center}
+    .stat span{font-size:3rem;color:var(--primary);font-weight:700}
+    footer{background:#1A1A2D;padding:40px 20px;text-align:center;font-size:.9rem;opacity:.85}
+    footer strong{color:var(--primary)}
+
+    /* ===================== Responsive pour mobile et tablette ===================== */
+
+/* Nav en colonne sur tablette/mobile */
+@media(max-width:900px){
+  nav{
+    flex-direction:column;
+    gap:12px;
+    padding:12px;
+  }
+}
+
+/* Header texte et bouton plus petits */
+@media(max-width:700px){
+  header h1{
+    font-size:2.3rem;
+  }
+  header p{
+    font-size:1rem;
+  }
+  .btn{
+    padding:12px 28px;
+    font-size:.9rem;
+  }
+}
+
+/* Grilles adaptatives (cartes) */
+@media(max-width:900px){
+  .grid{
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+  }
+}
+@media(max-width:500px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+
+/* Stats membres/activité centrées et réduites */
+@media(max-width:500px){
+  .stats{
+    flex-direction:column;
+    gap:20px;
+  }
+  .stat span{
+    font-size:2rem;
+  }
+}
+
+/* FAQ / accordéon padding réduit */
+@media(max-width:500px){
+  .faq-item{
+    padding:12px;
+  }
+}
+.nav-logo {
+  height: 40px;       /* Hauteur du logo */
+  width: 40px;        /* Largeur identique pour garder un cercle parfait */
+  border-radius: 50%; /* Transforme en cercle */
+  margin-right: 12px; /* Espace entre logo et liens */
+  object-fit: cover;  /* Pour que l’image remplisse bien le cercle */
+  vertical-align: middle;
+}
+
+/* Logo plus petit sur mobile */
+@media(max-width:700px){
+  .nav-logo{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 8px;
+  }
+}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">
+    <img src="logo.png" alt="Azkuna Community" class="nav-logo">
+  </a>
+  <a href="index.html">Accueil</a>
+  <a href="serveur.html">Serveur</a>
+  <a href="roles.html">Rôles</a>
+  <a href="recompenses.html">Récompenses</a>
+  <a href="events.html">Events</a>
+  <a href="regles.html">Règles</a>
+  <a href="staff.html">Staff</a>
+  <a href="membres.html">Membres</a>
+  <a href="faq.html">FAQ</a>
+  <a href="mentions.html">Mentions légales</a>
+</nav>
+
+<header>
+  <div>
+    <h1>Membres du serveur</h1>
+    <p>Découvrez le nombre total de membres actifs et engagez-vous dans la communauté <strong>༆Azkuna Community༆ #2026🎇</strong>.</p>
+    <a href="https://discord.gg/yHnXVbuqDs" class="btn">Rejoindre le serveur Discord</a>
+
+    <div class="stats">
+      <div class="stat">
+        <span id="member-count">141</span>
+        <p>Membres</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="membres">
+  <h2>Communauté active</h2>
+  <p>Chaque membre contribue à la vie du serveur. Plus vous participez, plus vous pouvez progresser et obtenir des rôles et récompenses exclusifs.</p>
+</section>
+
+<footer>
+  <p>© 2026 – Site vitrine créé par <strong>Next One Group – Branche IT</strong>.</p>
+</footer>
+
+<script>
+// Compteur dynamique simulé
+let memberCount = 141;
+setInterval(() => {
+  document.getElementById('member-count').textContent = memberCount;
+}, 5000);
+</script>
+
+</body>
+</html>
