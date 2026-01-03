@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>༆Azkuna Community༆ #2026🎇 | Récompenses</title>
+  <meta name="description" content="Découvrez les récompenses et avantages pour les membres du serveur Discord '༆Azkuna Community༆ #2026🎇' – XP, giveaways et salons exclusifs.">
+  <link rel="icon" type="image/png" href="logo.png">
+ <style>
+    :root{
+      --primary:#6C63FF; --secondary:#FF6584; --accent:#00FFC6;
+      --bg:#1E1E2F; --card:#2A2A3E; --text:#EAEAEA; --highlight:#FFD166; --hover:#FF4D70;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',Arial,sans-serif}
+    body{background:var(--bg);color:var(--text);line-height:1.8}
+    nav{position:fixed;top:0;left:0;right:0;background:rgba(30,30,47,.95);display:flex;justify-content:center;gap:24px;padding:16px;z-index:1000;flex-wrap:wrap}
+    nav a{color:#fff;text-decoration:none;font-size:.9rem;transition:.3s}
+    nav a:hover{color:var(--primary)}
+    header{min-height:60vh;display:flex;align-items:center;justify-content:center;padding:140px 20px 80px;text-align:center;background:linear-gradient(135deg,var(--bg),#252540)}
+    header h1{font-size:3.2rem;margin-bottom:25px;color:var(--primary)}
+    header p{max-width:900px;margin:auto;font-size:1.2rem;opacity:.9}
+    .btn{display:inline-block;margin-top:40px;padding:16px 38px;border-radius:12px;background:var(--secondary);color:#fff;font-weight:600;text-decoration:none;transition:.3s}
+    .btn:hover{background:var(--hover)}
+    section{max-width:1200px;margin:auto;padding:100px 20px}
+    section h2{text-align:center;font-size:2.4rem;margin-bottom:60px;color:var(--accent)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:35px}
+    .card{background:var(--card);padding:35px;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.4);transition:.3s}
+    .card:hover{transform:translateY(-5px);box-shadow:0 25px 55px rgba(0,0,0,.5)}
+    .card h3{color:var(--secondary);margin-bottom:15px}
+    footer{background:#1A1A2D;padding:40px 20px;text-align:center;font-size:.9rem;opacity:.85}
+    footer strong{color:var(--primary)}
+
+    /* ===================== Responsive pour mobile et tablette ===================== */
+
+/* Nav en colonne sur tablette/mobile */
+@media(max-width:900px){
+  nav{
+    flex-direction:column;
+    gap:12px;
+    padding:12px;
+  }
+}
+
+/* Header texte et bouton plus petits */
+@media(max-width:700px){
+  header h1{
+    font-size:2.3rem;
+  }
+  header p{
+    font-size:1rem;
+  }
+  .btn{
+    padding:12px 28px;
+    font-size:.9rem;
+  }
+}
+
+/* Grilles adaptatives (cartes) */
+@media(max-width:900px){
+  .grid{
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+  }
+}
+@media(max-width:500px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+
+/* Stats membres/activité centrées et réduites */
+@media(max-width:500px){
+  .stats{
+    flex-direction:column;
+    gap:20px;
+  }
+  .stat span{
+    font-size:2rem;
+  }
+}
+
+/* FAQ / accordéon padding réduit */
+@media(max-width:500px){
+  .faq-item{
+    padding:12px;
+  }
+}
+
+.nav-logo {
+  height: 40px;       /* Hauteur du logo */
+  width: 40px;        /* Largeur identique pour garder un cercle parfait */
+  border-radius: 50%; /* Transforme en cercle */
+  margin-right: 12px; /* Espace entre logo et liens */
+  object-fit: cover;  /* Pour que l’image remplisse bien le cercle */
+  vertical-align: middle;
+}
+
+/* Logo plus petit sur mobile */
+@media(max-width:700px){
+  .nav-logo{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 8px;
+  }
+}
+/* Bouton hamburger moderne */
+#menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+#menu-toggle .bar {
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Menu caché sur PC et mobile */
+nav {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Hors écran par défaut */
+  height: 100vh;
+  width: 280px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 60px 20px 20px;
+  background: rgba(30,30,47,0.97);
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+/* Menu ouvert */
+nav.active {
+  left: 0;
+}
+
+/* Transformation du bouton en X */
+#menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+#menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+#menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Ajustement nav sur mobile */
+@media(max-width:900px){
+  nav{
+    width: 220px;
+  }
+}
+  </style>
+</head>
+<body>
+
+<nav>
+    <button id="menu-toggle" aria-label="Ouvrir/fermer le menu">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+  <a href="index.html">
+    <img src="logo.png" alt="Azkuna Community" class="nav-logo">
+  </a>
+  <a href="index.html">Accueil</a>
+  <a href="serveur.html">Serveur</a>
+  <a href="roles.html">Rôles</a>
+  <a href="recompenses.html">Récompenses</a>
+  <a href="events.html">Events</a>
+  <a href="regles.html">Règles</a>
+  <a href="staff.html">Staff</a>
+  <a href="membres.html">Membres</a>
+  <a href="faq.html">FAQ</a>
+  <a href="mentions.html">Mentions légales</a>
+</nav>
+
+
+<header>
+  <div>
+    <h1>Récompenses & Avantages</h1>
+    <p>Découvrez comment être récompensé pour votre activité et votre participation sur le serveur <strong>༆Azkuna Community༆ #2026🎇</strong>.</p>
+    <a href="https://discord.gg/yHnXVbuqDs" class="btn">Rejoindre le serveur Discord</a>
+  </div>
+</header>
+
+<section id="recompenses">
+  <h2>Ce que vous pouvez gagner</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>XP & Points</h3>
+      <p>Accumulez de l'expérience et des points grâce à votre activité sur le serveur, vos messages et votre participation aux discussions.</p>
+    </div>
+    <div class="card">
+      <h3>Giveaways</h3>
+      <p>Participez aux tirages et gagnez des cadeaux réguliers réservés aux membres actifs et engagés du serveur.</p>
+    </div>
+    <div class="card">
+      <h3>Salons exclusifs</h3>
+      <p>Accédez à des salons privés et à des rôles spéciaux pour les membres ayant atteint certains niveaux ou ayant participé à des événements.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 – Site vitrine créé par <strong>Next One Group – Branche IT</strong>.</p>
+</footer>
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+const nav = document.querySelector('nav');
+
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  menuToggle.classList.toggle('active');
+});
+</script>
+</body>
+</html>
